@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Enter size of string : "));
+        let arr = new Array();
+
+        for (let i = 0; i < num; i++){
+            arr[i] = parseInt(prompt("Enter" + (i+1)+ "number : "));
+        }
+        max = parseInt(arr[0]);
+        for (let j = 1; j < num; j++){
+            if (max<arr[j]) {
+                max = arr[j];
+            }            
+        }
+
+        document.write("Maximum Array Element : "+ max);
+    </script>
+</body>
+</html>
